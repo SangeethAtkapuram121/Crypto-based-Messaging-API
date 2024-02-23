@@ -57,8 +57,8 @@ try:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
             body=message_starting,
-            from_="+13613219044",#"whatsapp:+1(415)523-8886",#
-            to="+919381347095"
+            from_=# Enter your own twilio generated phone number. "+13613219044",#"whatsapp:+1(415)523-8886".
+            to= #Enter the number to which the notifications can be sent.
     )
     print(message.sid)
     print('The message has been sent to the user.')
